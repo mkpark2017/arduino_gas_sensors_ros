@@ -3,7 +3,7 @@
 #include "ros/node_handle.h"
 #include "ArduinoHardware.h"
 
-ros::NodeHandle_<ArduinoHardware, 5, 5, 0, 256> nh;
+ros::NodeHandle_<ArduinoHardware, 5, 5, 256, 256> nh;
 
 sensor_msgs::Range sensor_msg0;
 ros::Publisher gas_sensor_value0("GSAS_sensor_value_0", &sensor_msg0);
